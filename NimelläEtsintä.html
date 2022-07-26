@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head></head>
+<body>
+    <table id="table">
+        <tr>
+          <td>Kerro ikäsi:</td>
+      
+          <td>
+            <label>
+              <input type="radio" name="ikä" value="young" > less than 18
+            </label>
+            <label>
+              <input type="radio" name="ikä" value="aikuinen" checked> from 18 to 50
+            </label>
+            <label>
+              <input type="radio" name="ikä" value="seniori"> more than 60
+            </label>
+          </td>
+        </tr>
+      </table>
+  
+    <script>
+        let inputs = table.getElementsByTagName('input');
+
+        for (let input of inputs) {
+            alert( input.value + ': ' + input.checked );
+        }
+  </script>
+  </body>
+</html>
